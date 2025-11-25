@@ -1,0 +1,13 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://qaxpm307f12q"]
+
+[ext_resource type="FontFile" uid="uid://b2hsd100jy67e" path="res://Assets/Font/digital-7.ttf" id="1_f0otf"]
+
+[resource]
+Label/colors/font_color = Color(0.256, 0.8, 0.7455999, 1)
+Label/colors/font_outline_color = Color(0, 0, 0, 1)
+Label/colors/font_shadow_color = Color(0, 0, 0, 0.39215687)
+Label/constants/outline_size = 4
+Label/constants/shadow_offset_x = 7
+Label/constants/shadow_offset_y = 2
+Label/constants/shadow_outline_size = 6
+Label/fonts/font = ExtResource("1_f0otf")

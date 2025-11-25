@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://bylox8p5bdg1v"]
+[gd_scene load_steps=6 format=3 uid="uid://bylox8p5bdg1v"]
 
 [ext_resource type="Script" uid="uid://oo804fs4kngo" path="res://Scripts/Levels-UI/ui.gd" id="1_ksqms"]
 [ext_resource type="PackedScene" uid="uid://cqmoc0kavr2g6" path="res://Scenes/Panels/Norm_Tower.tscn" id="1_vg8ev"]
+[ext_resource type="Theme" uid="uid://qaxpm307f12q" path="res://Assets/UI.tres" id="2_m7nxg"]
+[ext_resource type="PackedScene" uid="uid://bg2vevy3diekj" path="res://Scenes/Panels/Zap_Panel.tscn" id="3_ksqms"]
+[ext_resource type="PackedScene" uid="uid://k6pird1aqces" path="res://Scenes/Panels/slow_tower.tscn" id="4_obbgy"]
 
 [node name="UI" type="CanvasLayer" groups=["UI"]]
 layer = -1
@@ -18,34 +21,80 @@ offset_top = -64.0
 offset_right = 320.0
 grow_horizontal = 2
 grow_vertical = 0
+theme = ExtResource("2_m7nxg")
 
 [node name="FlowContainer" type="FlowContainer" parent="Panel"]
-layout_mode = 0
-offset_right = 640.0
-offset_bottom = 64.0
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -32.0
+offset_right = 100.0
+offset_bottom = 32.0
+grow_horizontal = 2
+grow_vertical = 2
+vertical = true
 
 [node name="Norm_tank_panel" parent="Panel/FlowContainer" instance=ExtResource("1_vg8ev")]
 layout_mode = 2
 
-[node name="Score" type="Label" parent="."]
-offset_top = 192.0
+[node name="FastTower" parent="Panel/FlowContainer" instance=ExtResource("3_ksqms")]
+layout_mode = 2
+
+[node name="Slow_tower" parent="Panel/FlowContainer" instance=ExtResource("4_obbgy")]
+layout_mode = 2
+
+[node name="Score" type="Label" parent="Panel"]
+layout_mode = 1
 offset_right = 124.0
-offset_bottom = 206.0
-theme_override_font_sizes/font_size = 10
+offset_bottom = 14.0
+theme = ExtResource("2_m7nxg")
+theme_override_font_sizes/font_size = 19
 text = "Score: 6767676767676767"
 
-[node name="money" type="Label" parent="."]
-offset_top = 208.0
+[node name="money" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -14.0
 offset_right = 67.0
-offset_bottom = 222.0
-theme_override_font_sizes/font_size = 10
+grow_vertical = 0
+theme = ExtResource("2_m7nxg")
+theme_override_font_sizes/font_size = 19
 text = "Mons: 999999"
 vertical_alignment = 2
 
-[node name="wave_count" type="Label" parent="."]
-offset_top = 223.0
-offset_right = 104.0
-offset_bottom = 237.0
+[node name="wave_count" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -104.0
+offset_bottom = 14.0
+grow_horizontal = 0
+theme = ExtResource("2_m7nxg")
 theme_override_font_sizes/font_size = 10
 text = "Wave Count: 999999"
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="Enemies left" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -104.0
+offset_top = -14.0
+grow_horizontal = 0
+grow_vertical = 0
+theme = ExtResource("2_m7nxg")
+theme_override_font_sizes/font_size = 10
+text = "Wave Count: 999999"
+horizontal_alignment = 2
 vertical_alignment = 2

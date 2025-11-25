@@ -1,7 +1,6 @@
 extends CharacterBody2D
 class_name Projectile
 
-
 @export var speed :float
 
 var damage : float
@@ -13,7 +12,7 @@ func _physics_process(_delta: float) -> void:
 		velocity = global_position.direction_to(target.global_position) * speed
 	move_and_slide()
 
-func set_target(t):
+func set_target(t)-> void:
 	target = t
 
 func _on_timer_timeout() -> void:

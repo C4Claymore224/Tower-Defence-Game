@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bess207sn47b8"]
+
+[ext_resource type="PackedScene" uid="uid://deug8vwqga8to" path="res://Scenes/Towers/Proj Tower.tscn" id="1_s4ntf"]
+
+[node name="Slow Tower" instance=ExtResource("1_s4ntf")]
+bullet_damage = 3.5
+fire_rate = 0.3
+
+[node name="AnimatedSprite2D" parent="." index="2"]
+self_modulate = Color(0.98583335, 1, 0.14999998, 1)

@@ -4,7 +4,7 @@ class_name TankPanel
 #const TILE_SIZE := Vector2(32,32)
 
 @export var display_tower : PackedScene
-@export var worth : int
+@export var worth : float
 
 func _on_gui_input(event: InputEvent) -> void:
 	var tower = display_tower.instantiate()
@@ -37,12 +37,13 @@ func _on_gui_input(event: InputEvent) -> void:
 			if get_child_count() > 1:
 				get_child(1).queue_free()
 			if !enem_path_flag:		# correct spot
-					var path = get_tree().get_root().get_node("Main/Towers")
+					var tow_container = get_tree().get_first_node_in_group("Game_Level").get_node("Towers")
 					GameManager.Money -= worth
 					tower.global_position = event.global_position
-					path.add_child(tower)
+					tow_container.add_child(tower)
 					tower.particles.emitting = true
 					tower.vision_area.hide()
+					worth += .2
 			else:					# Wrong Spot
 				print("CANT PLACE")
 	else:
