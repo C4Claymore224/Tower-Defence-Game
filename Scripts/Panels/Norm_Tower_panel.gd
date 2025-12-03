@@ -33,19 +33,24 @@ func _on_gui_input(event: InputEvent) -> void:
 			else:
 				pass
 	elif event is InputEventMouseButton and event.button_mask == 0:		# left mouse up
-		if GameManager.Money >= worth:
+		if !event.global_position.y >= 245:
+			if GameManager.Money >= worth:
+				if get_child_count() > 1:
+					get_child(1).queue_free()
+				if !enem_path_flag:		# correct spot
+						var tow_container = get_tree().get_first_node_in_group("Game_Level").get_node("Towers")
+						GameManager.Money -= worth
+						tower.global_position = event.global_position
+						tow_container.add_child(tower)
+						tower.particles.emitting = true
+						tower.vision_area.hide()
+						worth += .2
+				else:					# Wrong Spot
+					print("CANT PLACE")
+		else:
 			if get_child_count() > 1:
 				get_child(1).queue_free()
-			if !enem_path_flag:		# correct spot
-					var tow_container = get_tree().get_first_node_in_group("Game_Level").get_node("Towers")
-					GameManager.Money -= worth
-					tower.global_position = event.global_position
-					tow_container.add_child(tower)
-					tower.particles.emitting = true
-					tower.vision_area.hide()
-					worth += .2
-			else:					# Wrong Spot
-				print("CANT PLACE")
+				return
 	else:
 		if get_child_count() > 1:
 				get_child(1).queue_free()

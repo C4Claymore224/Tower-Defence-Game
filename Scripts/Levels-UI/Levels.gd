@@ -1,6 +1,8 @@
 extends Node2D
 class_name Level
 
+signal wave_done
+
 @export var enemie_scenes: Array[PackedScene]
 @export var enems_each_wave: Array[int]
 @export var wave_max: int
@@ -11,7 +13,6 @@ class_name Level
 @onready var enemy_path: Path2D = $"Enemy Path"
 @onready var enemy_spawn: Timer = $Timers/EnemySpawn
 @onready var wave_cooldown: Timer = $Timers/wave_cooldown
-@onready var game_start: Timer = $Timers/Game_start
 
 @onready var Bugs_Excaped := 0
 @onready var wave_health_plus: float = 0
@@ -22,7 +23,7 @@ var enem_picker:= 1
 var spawn_time = randf_range(.5,1.5)
 
 ## FLAGS
-@onready var is_game_started:= false
+@onready var is_wave_started := false 
 @onready var is_boss_fight_started := false
 @onready var is_level_beat := false
 @onready var is_stage_beat := false
@@ -34,10 +35,12 @@ func _ready() -> void:
 func _process(_delta: float) -> void:
 	if enemies_to_spawn <= 0:  # stops enemy spawn timer
 		enemy_spawn.stop()
-	if enemies_to_die <= 0 and !is_level_beat and is_game_started and !lose_level: # checking if level is won
+	if enemies_to_die <= 0 and !is_level_beat and !lose_level and is_wave_started: # checking if level is won
+		print("Level Beat")
 		enemy_spawn.stop()
 		wave_compleated()
 		is_level_beat = true
+		wave_done.emit()
 	#if is_stage_beat:
 		#return
 
@@ -45,7 +48,7 @@ func spawn_enemie() -> void:
 	var enem = enemie_scenes[enem_picker].instantiate()
 	enem.Escaped.connect(on_enem_escaped)
 	enem.Death.connect(on_enem_death)
-	if !is_boss_fight_started:
+	if !is_boss_fight_started:		# switching emeies per wave
 		if wave_count == 1:
 			enem_picker = 1
 		elif wave_count == 2:
@@ -82,48 +85,39 @@ func on_enem_death(amount: float, score: int)-> void:
 
 func wave_compleated()-> void:
 	if !lose_level:
-		print("Level Beat")
 		wave_count += 1
-		print(wave_count)
-		if !is_boss_fight_started and !wave_count == wave_max:
-			if wave_count == wave_max - 1:		# Start Boss fight
-				print("Boss is Comming!")
+		if !is_boss_fight_started and !wave_count == wave_max: 
+			if wave_count == wave_max - 1:						# Start Boss fight
+				print("BOSS UP NEXT!")
 				is_boss_fight_started = true
-				wave_cooldown.start(10)
-				enemy_spawn.stop()
-			else:
-				wave_cooldown.start()
-		else:
+		else:													# Stage Done
 			print("Stage Beat!")
-	
 
-func _on_wave_cooldown_timeout() -> void:
-	print("cooldown ended")
+func start_wave():
+	print("Wave Started, wave count: ", wave_count)
+	enemies_to_spawn = enems_each_wave[wave_count]
+	enemies_to_die = enemies_to_spawn
+	is_wave_started = true
 	if !is_boss_fight_started:
-		enemies_to_spawn = enems_each_wave[wave_count]
-		wave_health_plus += 1
-		wave_speed_plus += 5.5
-		enemies_to_die = enemies_to_spawn
-		if wave_count >= 3:
-			spawn_time = randf_range(.5,1)
-		elif wave_count > 5:
+		if wave_count >= 2:
+			wave_health_plus += 0.5
+			wave_speed_plus += 5.5
 			spawn_time = randf_range(.5,.7)
+		elif wave_count > 7:
+			wave_health_plus += 1
+			wave_speed_plus += 5.5
+			spawn_time = randf_range(.05,.1)
 		enemy_spawn.start(spawn_time)
 		is_level_beat = false
 	else:
-		enemies_to_spawn = enems_each_wave[wave_count]
-		enemies_to_die = enemies_to_spawn
 		enem_picker = 2
 		is_level_beat = false
 		spawn_enemie()
 
+func _on_wave_cooldown_timeout() -> void:
+	print("cooldown ended")
+	start_wave()
+
 func _on_enemy_spawn_timeout() -> void:
 	enemies_to_spawn -= 1
 	spawn_enemie()
-
-
-func _on_game_start_timeout() -> void:
-	is_game_started = true
-	enemy_spawn.start()
-	enemies_to_spawn = enems_each_wave[wave_count]
-	enemies_to_die = enemies_to_spawn

@@ -1,10 +1,11 @@
-[gd_scene load_steps=15 format=3 uid="uid://deug8vwqga8to"]
+[gd_scene load_steps=16 format=3 uid="uid://deug8vwqga8to"]
 
 [ext_resource type="Script" uid="uid://vdpqhx68jd4d" path="res://Scripts/Tanks/Tower.gd" id="1_qkqav"]
 [ext_resource type="Script" uid="uid://b3iee6sj0pveh" path="res://Scripts/Tanks/projectile.gd" id="2_k8t06"]
 [ext_resource type="Texture2D" uid="uid://d21vjp1o8gcgw" path="res://Assets/Drawn Assets/Tower Defence TileSet.png" id="3_0khgp"]
 [ext_resource type="StyleBox" uid="uid://d2ua1h85dx643" path="res://Assets/Drawn Assets/tower_area_stylebox.tres" id="3_iku0a"]
 [ext_resource type="Texture2D" uid="uid://8tl41v6brtqg" path="res://Assets/Drawn Assets/Projectile.png" id="3_y316y"]
+[ext_resource type="Theme" uid="uid://qaxpm307f12q" path="res://Assets/UI.tres" id="6_y316y"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_6qccj"]
 radius = 1.0
@@ -23,7 +24,7 @@ _bundled = {
 }
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_fy0dn"]
-radius = 82.0
+radius = 70.00714
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_iku0a"]
 atlas = ExtResource("3_0khgp")
@@ -121,11 +122,13 @@ position = Vector2(0, 18)
 follow_viewport_enabled = true
 
 [node name="panel" type="Panel" parent="Upgrade UI"]
+visible = false
 offset_left = -88.0
 offset_top = 18.0
 offset_right = 88.0
-offset_bottom = 65.0
+offset_bottom = 63.0
 pivot_offset = Vector2(88, 0)
+theme = ExtResource("6_y316y")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Upgrade UI/panel"]
 layout_mode = 0

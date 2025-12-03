@@ -71,8 +71,9 @@ func _on_damage_pressed() -> void:
 	if !damage_lvl >= 10:
 		if GameManager.Money >= damage_price:
 			GameManager.Money -= damage_price
+			damage_price += 10
 			damage_lvl += 1
-			bullet_damage += .3
+			bullet_damage += .5
 			print(name," Bullet Damage: ",bullet_damage)
 		else:
 			print("YOU BROKE NIGGA")
@@ -83,6 +84,7 @@ func _on_fire_rate_pressed() -> void:
 	if !fire_rate_lvl >= 10:
 		if GameManager.Money >= fire_rate_price:
 			GameManager.Money -= fire_rate_price
+			fire_rate_price += 10
 			fire_rate_lvl += 1
 			fire_rate += .3
 			print(name," Fire rate: ",fire_rate)
@@ -95,6 +97,7 @@ func _on_range_pressed() -> void:
 	if !range_lvl >= 10:
 		if GameManager.Money >= range_price:
 			GameManager.Money -= range_price
+			range_price += 10
 			range_lvl += 1
 			vision.shape.radius += 3
 			print(name," Range: ",vision.shape.radius)

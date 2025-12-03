@@ -39,8 +39,8 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_x1rqp"]
-radius = 8.0
-height = 32.0
+radius = 5.0
+height = 18.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x1rqp"]
 bg_color = Color(0.46932358, 0.03913216, 0.064473316, 1)
@@ -118,8 +118,6 @@ frame_progress = 0.30421704
 [node name="Enemyarea" type="Area2D" parent="." groups=["Enemy"]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Enemyarea"]
-visible = false
-position = Vector2(-0.67, -2.39)
 rotation = 1.5707964
 shape = SubResource("CapsuleShape2D_x1rqp")
 

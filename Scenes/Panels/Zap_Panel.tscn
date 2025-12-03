@@ -1,9 +1,8 @@
-[gd_scene load_steps=16 format=3 uid="uid://bg2vevy3diekj"]
+[gd_scene load_steps=6 format=3 uid="uid://bg2vevy3diekj"]
 
 [ext_resource type="Script" uid="uid://bjfa66a3icts0" path="res://Scripts/Levels-UI/double_tower_panel_node.gd" id="1_kv740"]
 [ext_resource type="Script" uid="uid://cn2dffbl3qbcy" path="res://Scripts/Panels/Norm_Tower_panel.gd" id="2_lgkbv"]
-[ext_resource type="Script" uid="uid://dhfo1qplx5mce" path="res://Scripts/Tanks/FastTower.gd" id="3_tt6nr"]
-[ext_resource type="Texture2D" uid="uid://d21vjp1o8gcgw" path="res://Assets/Drawn Assets/Tower Defence TileSet.png" id="4_ni2h4"]
+[ext_resource type="PackedScene" uid="uid://h3gy6igsgysx" path="res://Scenes/Towers/Zap Tower.tscn" id="3_uialx"]
 [ext_resource type="Texture2D" uid="uid://npcof4x43w2r" path="res://Assets/Drawn Assets/Zap Tower.png" id="4_uialx"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ukjyt"]
@@ -18,56 +17,6 @@ corner_radius_top_left = 5
 corner_radius_top_right = 5
 corner_radius_bottom_right = 5
 corner_radius_bottom_left = 5
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cors7"]
-bg_color = Color(1.2468618, 1.2468618, 1.2468618, 0.26666668)
-corner_radius_top_left = 450
-corner_radius_top_right = 450
-corner_radius_bottom_right = 450
-corner_radius_bottom_left = 450
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_igmnh"]
-size = Vector2(55, 42)
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_l6m71"]
-radius = 50.0
-
-[sub_resource type="Curve" id="Curve_cors7"]
-_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.4967742, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
-point_count = 3
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_i81jm"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jsqar"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_jsqar"]
-atlas = ExtResource("4_ni2h4")
-region = Rect2(16, 272, 16, 16)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_5jm0j"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_jsqar")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
-
-[sub_resource type="PackedScene" id="PackedScene_qvcxv"]
-_bundled = {
-"conn_count": 6,
-"conns": PackedInt32Array(1073741840, 1073741839, 105, 104, 2, 0, 0, 1073741842, 1073741841, 107, 106, 2, 0, 0, 1073741844, 1073741843, 109, 108, 2, 0, 0, 1073741846, 1073741845, 111, 110, 2, 0, 0, 1073741848, 1073741847, 113, 112, 2, 0, 0, 1073741850, 1073741849, 115, 114, 2, 0, 0),
-"editable_instances": [],
-"names": PackedStringArray("Zap Tower", "Area2D", "Towers", "script", "bullet_damage", "fire_rate", "particles", "vision", "vision_area", "upgrade_panel", "damage_button", "range_button", "fire_rate_button", "Area", "Panel", "offset_left", "offset_top", "offset_right", "offset_bottom", "theme_override_styles/panel", "CollisionShape2D", "CollisionShape2D", "visible", "position", "shape", "EnemDetectection", "Area2D", "Vision_Area", "CollisionShape2D", "shape", "CPUParticles2D", "CPUParticles2D", "emitting", "amount", "one_shot", "explosiveness", "spread", "gravity", "initial_velocity_min", "initial_velocity_max", "scale_amount_min", "scale_amount_max", "scale_amount_curve", "color", "Upgrade Button", "Button", "offset_left", "offset_top", "offset_right", "offset_bottom", "theme_override_styles/normal", "theme_override_styles/focus", "toggle_mode", "upgrade_pos", "Marker2D", "position", "Upgrade UI", "CanvasLayer", "follow_viewport_enabled", "panel", "Panel", "visible", "offset_left", "offset_top", "offset_right", "offset_bottom", "pivot_offset", "HBoxContainer", "HBoxContainer", "layout_mode", "offset_right", "offset_bottom", "pivot_offset", "theme_override_constants/separation", "Damage", "Button", "custom_minimum_size", "layout_mode", "size_flags_horizontal", "size_flags_vertical", "theme_override_font_sizes/font_size", "text", "Range", "Button", "custom_minimum_size", "layout_mode", "size_flags_horizontal", "size_flags_vertical", "theme_override_font_sizes/font_size", "text", "Fire Rate", "Button", "custom_minimum_size", "layout_mode", "size_flags_horizontal", "size_flags_vertical", "theme_override_font_sizes/font_size", "text", "Timer", "Timer", "AnimatedSprite2D", "AnimatedSprite2D", "scale", "sprite_frames", "_on_enem_detectection_area_entered", "area_entered", "_on_enem_detectection_area_exited", "area_exited", "_on_upgrade_button_toggled", "toggled", "_on_damage_pressed", "pressed", "_on_range_pressed", "pressed", "_on_fire_rate_pressed", "pressed"),
-"node_count": 16,
-"node_paths": [NodePath("."), NodePath("."), NodePath("."), NodePath("./EnemDetectection"), NodePath("."), NodePath("."), NodePath("."), NodePath("."), NodePath("./Upgrade UI"), NodePath("./Upgrade UI/panel"), NodePath("./Upgrade UI/panel/HBoxContainer"), NodePath("./Upgrade UI/panel/HBoxContainer"), NodePath("./Upgrade UI/panel/HBoxContainer"), NodePath("."), NodePath("."), NodePath("."), NodePath("EnemDetectection"), NodePath("."), NodePath("EnemDetectection"), NodePath("."), NodePath("Upgrade Button"), NodePath("."), NodePath("Upgrade UI/panel/HBoxContainer/Damage"), NodePath("."), NodePath("Upgrade UI/panel/HBoxContainer/Range"), NodePath("."), NodePath("Upgrade UI/panel/HBoxContainer/Fire Rate")],
-"nodes": PackedInt32Array(-1, -1, 1, 0, -1, 10, 3, 0, 4, 1, 5, 2, 1073741830, 3, 1073741831, 4, 1073741832, 5, 1073741833, 6, 1073741834, 7, 1073741835, 8, 1073741836, 9, 1, 2, 1073741824, 0, 14, 13, -1, 5, 15, 10, 16, 11, 17, 12, 18, 13, 19, 14, 0, 1073741825, 0, 21, 20, -1, 3, 22, 15, 23, 16, 24, 17, 0, 1073741826, 0, 26, 25, -1, 0, 0, 1073741827, 0, 28, 27, -1, 1, 29, 18, 0, 1073741828, 0, 31, 30, -1, 12, 32, 19, 33, 20, 34, 21, 35, 22, 36, 23, 37, 24, 38, 25, 39, 26, 40, 27, 41, 28, 42, 29, 43, 30, 0, 1073741829, 0, 45, 44, -1, 7, 46, 31, 47, 32, 48, 33, 49, 34, 50, 35, 51, 36, 52, 37, 0, 1073741830, 0, 54, 53, -1, 1, 55, 38, 0, 1073741831, 0, 57, 56, -1, 1, 58, 39, 0, 1073741832, 0, 60, 59, -1, 6, 61, 40, 62, 41, 63, 42, 64, 43, 65, 44, 66, 45, 0, 1073741833, 0, 68, 67, -1, 5, 69, 46, 70, 47, 71, 48, 72, 49, 73, 50, 0, 1073741834, 0, 75, 74, -1, 6, 76, 51, 77, 52, 78, 53, 79, 54, 80, 55, 81, 56, 0, 1073741835, 0, 83, 82, -1, 6, 84, 57, 85, 58, 86, 59, 87, 60, 88, 61, 89, 62, 0, 1073741836, 0, 91, 90, -1, 6, 92, 63, 93, 64, 94, 65, 95, 66, 96, 67, 97, 68, 0, 1073741837, 0, 99, 98, -1, 0, 0, 1073741838, 0, 101, 100, -1, 2, 102, 69, 103, 70, 0),
-"variants": [ExtResource("3_tt6nr"), 0.5, 2.0, NodePath("CPUParticles2D"), NodePath("EnemDetectection/Vision_Area"), NodePath("Area"), NodePath("Upgrade UI/panel"), NodePath("Upgrade UI/panel/HBoxContainer/Damage"), NodePath("Upgrade UI/panel/HBoxContainer/Range"), NodePath("Upgrade UI/panel/HBoxContainer/Fire Rate"), -50.0, -50.0, 50.0, 50.0, SubResource("StyleBoxFlat_cors7"), false, Vector2(-0.5, 0), SubResource("RectangleShape2D_igmnh"), SubResource("CircleShape2D_l6m71"), false, 10, true, 1.0, 180.0, Vector2(0, 0), 50.0, 100.0, 5.0, 15.0, SubResource("Curve_cors7"), Color(0.34901962, 0.75686276, 0.20784314, 1), -16.0, -16.0, 16.0, 16.0, SubResource("StyleBoxEmpty_i81jm"), SubResource("StyleBoxEmpty_jsqar"), true, Vector2(0, 16), true, false, -88.0, 16.0, 88.0, 56.0, Vector2(88, 0), 0, 176.0, 40.0, Vector2(88, 0), 8, Vector2(30, 30), 2, 3, 4, 8, "Damage
-", Vector2(30, 30), 2, 3, 4, 8, "Range", Vector2(30, 30), 2, 3, 4, 8, "Fire Rate", Vector2(2, 2), SubResource("SpriteFrames_5jm0j")],
-"version": 3
-}
 
 [node name="Zap_Panel" type="Control" node_paths=PackedStringArray("Pannel")]
 custom_minimum_size = Vector2(64, 64)
@@ -85,7 +34,7 @@ offset_right = 64.0
 offset_bottom = 64.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_ukjyt")
 script = ExtResource("2_lgkbv")
-display_tower = SubResource("PackedScene_qvcxv")
+display_tower = ExtResource("3_uialx")
 worth = 10.0
 metadata/_custom_type_script = "uid://cn2dffbl3qbcy"
 

@@ -125,9 +125,9 @@ shape = SubResource("CapsuleShape2D_k8gth")
 
 [node name="ProgressBar" type="ProgressBar" parent="."]
 offset_left = -45.0
-offset_top = -38.0
+offset_top = -40.0
 offset_right = 45.42
-offset_bottom = -15.745001
+offset_bottom = -17.745
 theme_override_styles/fill = SubResource("StyleBoxFlat_y6wv4")
 value = 100.0
 show_percentage = false
