@@ -91,6 +91,7 @@
             try {
                 const response = await fetch('/api/scores');
                 const scores = await response.json();
+                console.log('Scores response:', scores);
 
                 const tableBody = document.querySelector('table tbody');
                 tableBody.innerHTML = ''; // Clear existing rows

@@ -61,7 +61,12 @@ const fetchTopScores = (callback) => {
 
 // Routes
 app.post('/api/scores', (req, res) => {
+    console.log('Request body:', req.body);
     const { player, score } = req.body;
+
+    if (!req.body.player || !req.body.score) {
+        return res.status(400).send('Player name and score are required');
+    }
 
     if (!player || !score) {
         return res.status(400).json({ error: 'Player name and score are required' });
@@ -77,10 +82,10 @@ app.post('/api/scores', (req, res) => {
 });
 
 app.get('/api/scores', (req, res) => {
-    fetchTopScores((err, rows) => {
+    db.all('SELECT * FROM scores ORDER BY rank ASC', (err, rows) => {
         if (err) {
-            console.error('Error fetching scores:', err.message);
-            return res.status(500).json({ error: 'Failed to fetch scores' });
+            console.error('Database error:', err);
+            return res.status(500).send([]);
         }
         res.json(rows);
     });
