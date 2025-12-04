@@ -90,23 +90,27 @@
         async function loadScores() {
             try {
                 const response = await fetch('/api/scores');
-                const scores = await response.json();
-                console.log('Scores response:', scores);
+                const data = await response.json();
+
+                if (!Array.isArray(data)) {
+                    console.error('Invalid response format:', data);
+                    throw new Error(data.error || 'Unexpected response format');
+                }
 
                 const tableBody = document.querySelector('table tbody');
                 tableBody.innerHTML = ''; // Clear existing rows
 
-                scores.forEach((score) => {
+                data.forEach((score, index) => {
                     const row = document.createElement('tr');
                     row.innerHTML = `
-                        <td>${score.rank}</td>
-                        <td>${score.player}</td>
-                        <td>${score.score}</td>
-                    `;
+                <td>${index + 1}</td>
+                <td>${score.player}</td>
+                <td>${score.score}</td>
+            `;
                     tableBody.appendChild(row);
                 });
             } catch (error) {
-                console.error('Error loading scores:', error);
+                console.error('Error loading scores:', error.message);
             }
         }
 
