@@ -97,20 +97,22 @@
                     throw new Error(data.error || 'Unexpected response format');
                 }
 
+                console.log('[loadScores] Scores fetched successfully:', data);
+
                 const tableBody = document.querySelector('table tbody');
                 tableBody.innerHTML = ''; // Clear existing rows
 
                 data.forEach((score, index) => {
                     const row = document.createElement('tr');
                     row.innerHTML = `
-                <td>${index + 1}</td>
-                <td>${score.player}</td>
-                <td>${score.score}</td>
-            `;
+                        <td>${index + 1}</td>
+                        <td>${score.player}</td>
+                        <td>${score.score}</td>
+                `    ;
                     tableBody.appendChild(row);
                 });
             } catch (error) {
-                console.error('Error loading scores:', error.message);
+                console.error('[loadScores] Error loading scores:', error.message);
             }
         }
 
@@ -119,7 +121,7 @@
 
             const player = document.getElementById('player').value;
             const score = document.getElementById('score').value;
-            console.log('Submitting score:', { player, score }); // Debug log
+            console.log('[submitScore] Submitting score:', { player, score });
 
             const feedback = document.getElementById('formFeedback');
 
@@ -131,22 +133,25 @@
                 });
 
                 if (response.ok) {
-                    console.log('Score submitted successfully'); // Debug log
+                    console.log('[submitScore] Score submitted successfully.');
                     loadScores();
                     event.target.reset();
                     feedback.style.display = 'none';
                 } else {
-                    console.error('Failed to submit score:', response.status); // Debug log
+                    console.error('[submitScore] Failed to submit score. HTTP Status:', response.status);
                     feedback.style.display = 'block';
                 }
             } catch (error) {
-                console.error('Error submitting score:', error); // Debug log
+                console.error('[submitScore] Error submitting score:', error.message);
                 feedback.style.display = 'block';
             }
         });
 
         // Load scores when the page loads
-        window.onload = loadScores;
+        window.onload = () => {
+            console.log('[window.onload] Loading scores...');
+            loadScores();
+        };
     </script>
 
     <h2>Towers and Enemies</h2>
