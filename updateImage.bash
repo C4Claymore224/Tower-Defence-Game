@@ -4,7 +4,19 @@
 IMAGE_NAME="ghcr.io/luc14n/tower-defence-game"
 IMAGE_TAG="${1:-main}" # Use the first argument as the tag, default to 'main'
 CONTAINER_NAME="tower-defence-container"
-PORT_MAPPING="8080:8080" # Adjust if necessary
+PORT_MAPPING="8000:8000" # Adjust if necessary
+
+# Check if the container is running
+if docker ps -q -f name="$CONTAINER_NAME" > /dev/null; then
+  echo "Stopping the running container: $CONTAINER_NAME..."
+  docker stop "$CONTAINER_NAME"
+fi
+
+# Check if the container exists
+if docker ps -aq -f name="$CONTAINER_NAME" > /dev/null; then
+  echo "Removing the existing container: $CONTAINER_NAME..."
+  docker rm "$CONTAINER_NAME"
+fi
 
 # Pull the Docker image
 echo "Pulling the Docker image: $IMAGE_NAME:$IMAGE_TAG..."

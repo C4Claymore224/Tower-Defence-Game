@@ -19,7 +19,7 @@ RUN apk add --no-cache sqlite
 RUN mkdir -p /usr/src/app/data
 
 # Copy the SQLite script into the container
-COPY .app/data/init.sql /usr/src/app/data/init.sql
+COPY ./app/data/init.sql /usr/src/app/data/init.sql
 
 # Initialize the database by running the script
 RUN sqlite3 /usr/src/app/data/database.db < /usr/src/app/data/init.sql
