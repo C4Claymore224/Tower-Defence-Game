@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 
 const app = express();
 const PORT = 8000;
-const dbPath = path.join(__dirname, 'app', 'data', 'database.db');
+const dbPath = path.join(__dirname, 'data', 'database.db');
 
 // Middleware
 app.use(bodyParser.json());
@@ -29,11 +29,13 @@ const db = new sqlite3.Database(dbPath, (err) => {
 });
 
 const addScore = (player, numericScore, callback) => {
-    const insertQuery = `
-        INSERT INTO scores (player, score)
-        VALUES (?, ?)
-    `;
-    db.run(insertQuery, [player, numericScore], function (err) {
+    // NEW (Fixed)
+const insertQuery = `
+    INSERT INTO scores (player, score, rank)
+    VALUES (?, ?, 0)
+`;
+// Notice only 2 question marks above, so we only need 2 variables below
+db.run(insertQuery, [player, numericScore], function (err) {
         if (err) {
             console.error('[addScore] Insert query error:', err.message);
             return callback(err);
