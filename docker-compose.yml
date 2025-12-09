@@ -1,14 +1,17 @@
-version: '3.8'
+# docker-compose.yml
+
 
 services:
   app:
     build:
-      context:
+      context: .
       dockerfile: Dockerfile.app
     ports:
       - "8000:8000"
     volumes:
-      - COSC450DB:/usr/src/app/database # Mount volume for SQLite database
+      # CHANGE THIS LINE:
+      # Old: - COSC450DB:/usr/src/app/database
+      - COSC450DB:/usr/src/app/data # Align with Dockerfile and Server path
 
 volumes:
-  COSC450DB: # Define named volume for persistent storage
+  COSC450DB:
