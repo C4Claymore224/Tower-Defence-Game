@@ -11,11 +11,6 @@
             background-color: #383762;
             text-align: center;
         }
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: 2px solid #000;
-        }
         h1 {
             font-family: Copperplate, Papyrus, fantasy;
             font-size: 5vw;
@@ -49,6 +44,20 @@
         tr:hover {
             background-color: #f1f1f1;
         }
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+            overflow: hidden;
+        }
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
     </style>
 </head>
 <body>
@@ -60,7 +69,9 @@
     </div>
     <h1>Web Defense Warriors</h1>
     <p>Try and place in the top 10!</p>
-    <iframe src="game/Web-Defence-Warriors.html" title="Game"></iframe>
+    <div class="iframe-container">
+        <iframe src="game/Web-Defence-Warriors.html" title="Game"></iframe>
+    </div>
 
     <h2>Submit Your Score</h2>
     <form id="scoreForm">
