@@ -1,0 +1,32 @@
+res://Assets/Drawn Assets/tower_area_stylebox.tres::fe65a6c8ed414f47f58d4d78686f2adc::1765486360::res://.godot/exported/133200997/export-2f1189a0bfc83d4c43ba859eff937644-tower_area_stylebox.res
+res://Assets/UI.tres::896eef3297a5a0bd0262e94a16ebb51b::1765514229::res://.godot/exported/133200997/export-ec8eed835cb24d2b18cb8c3514241734-UI.res
+res://Resources/Enemies/Bug.tres::fd81a839e2ec893ce1f91b953700ba29::1765486375::res://.godot/exported/133200997/export-32dc06f6de93970d4a087dbd20ee47d8-Bug.res
+res://Resources/Enemies/Trojin_Boss.tres::3bac9e78e2e0331e1f6ce1b1be8dff5e::1765486375::res://.godot/exported/133200997/export-b3cdbc8c6deb2f05a728466f2a24c901-Trojin_Boss.res
+res://Resources/Enemies/Virus.tres::6e732d1399ffa39ecce0923d4fe2d3dd::1765486375::res://.godot/exported/133200997/export-82e3d0cb2992884c9b693a2a7ba70adf-Virus.res
+res://Resources/Paths/lv2_path.tres::79e67093e446cebd245a96a058ced95d::1765486360::res://.godot/exported/133200997/export-82d30cdebb8e38bba34079890dbbb2c7-lv2_path.res
+res://Resources/Paths/lvl_3_path.tres::72be3da43aa98c77f498f765a58ea5f5::1765486360::res://.godot/exported/133200997/export-db9fcb621abe13403a8263db3e999a21-lvl_3_path.res
+res://Resources/Towers/Proj.tres::5056307444263ed127cb1db0eb08b0f9::1765514712::res://.godot/exported/133200997/export-aa14e9467c8c90ed652c9f0d5da1382e-Proj.res
+res://Resources/Towers/snipe.tres::67cd9bf015d4c88992991602cbb43c0e::1765514712::res://.godot/exported/133200997/export-f7e923ea5064d463c4712216aea90c5d-snipe.res
+res://Resources/Towers/zap.tres::10a6cf5a31d8dbec374ade65ab3339af::1765514712::res://.godot/exported/133200997/export-fb203a7535b0c066bc85071a660ef269-zap.res
+res://Scenes/Enemies/Bug.tscn::45c31f3d439cbc3cc251b04dae9f71be::1765486375::res://.godot/exported/133200997/export-e725b00ebf7f74c638706bd4b6c157f1-Bug.scn
+res://Scenes/Enemies/Enem_Death.tscn::63718d83db6803006086cdff87a8a107::1765486375::res://.godot/exported/133200997/export-ca0eb84242e5e91836c3dda9a22346dc-Enem_Death.scn
+res://Scenes/Enemies/trojin_horse.tscn::b80af663f1a87e95a8f6a12865987e14::1765486375::res://.godot/exported/133200997/export-d02f3f8c490c58408251d081483ebcb7-trojin_horse.scn
+res://Scenes/Enemies/virus.tscn::e02d17f6e8b4f5608c743a3d2edc8c6e::1765486375::res://.godot/exported/133200997/export-770fb4270ae99cf5ba3e1c5e9c2b858d-virus.scn
+res://Scenes/Maps and UI/Firstlvl_tilemap.tscn::b693e868e7e83d6d8d6c41eb3fc2a1aa::1765486360::res://.godot/exported/133200997/export-de9e10443cf8f27017bd420fc1baea3d-Firstlvl_tilemap.scn
+res://Scenes/Maps and UI/lvl_1.tscn::630839a719544d30f3d154d4dcf5be56::1765514838::res://.godot/exported/133200997/export-77e78519f37202598eb851bfe6365f13-lvl_1.scn
+res://Scenes/Maps and UI/title_screen.tscn::d7a812c77f5d6dd973dea3dbd36ea9dc::1765514229::res://.godot/exported/133200997/export-ded5a5c5a61e102215034cba5abd6643-title_screen.scn
+res://Scenes/Maps and UI/UI.tscn::ea65dae0d5577e95fe21f10c8ff6ae07::1765486375::res://.godot/exported/133200997/export-81bcaf3e708d3a7c1124d5a453b7ee59-UI.scn
+res://Scenes/Maps and UI/upgrade_shop.tscn::ba2752965bc49e3240fece09640b8ff7::1765486360::res://.godot/exported/133200997/export-cfb581564590f4b1e0e290e062d51578-upgrade_shop.scn
+res://Scenes/Panels/Norm_Tower.tscn::96c48d782e37db43a4327cacd6cb09cd::1765486375::res://.godot/exported/133200997/export-39802d6b725f6f8bfd7766087a3a494c-Norm_Tower.scn
+res://Scenes/Panels/scaner_pannel.tscn::112ae95cc74c058013354ff60a302774::1765486375::res://.godot/exported/133200997/export-25cf963ec8c04d0e4622686e6b2ef3e7-scaner_pannel.scn
+res://Scenes/Panels/slow_tower.tscn::1c46b3f1c75d01f0f8cf7d78e06dcf1e::1765486375::res://.godot/exported/133200997/export-12676e0d15be8f6d2285a8fee051d281-slow_tower.scn
+res://Scenes/Panels/Zap_Panel.tscn::8862f41a492dcbd733c3e70718b2db4a::1765486375::res://.godot/exported/133200997/export-dd6e12297cc2f96a7d13bdaf184d3478-Zap_Panel.scn
+res://Scenes/Towers/Projectiles/double_proj.tscn::9363d214f5d9da7cd416d0ca9f8d2a65::1765486360::res://.godot/exported/133200997/export-8a2e2b65805ec532dff67d85fbc43697-double_proj.scn
+res://Scenes/Towers/Projectiles/projectile.tscn::acb0be94c2f5b0ca3be102dfb716de13::1765486375::res://.godot/exported/133200997/export-4fe96337cf7c00ac6af934f1848c377d-projectile.scn
+res://Scenes/Towers/cpu.tscn::36c90155de71858e8b796d7f8afd9987::1765486375::res://.godot/exported/133200997/export-945ea89795e746034d63c6efd3fe11e8-cpu.scn
+res://Scenes/Towers/Proj Tower.tscn::878b67a78a606d199059e4af74302fef::1765514633::res://.godot/exported/133200997/export-edf79fc2301096133e36565297c842af-Proj Tower.scn
+res://Scenes/Towers/scanner_tower.tscn::d11dacca567d6abf4ba01d6ed910cf72::1765486375::res://.godot/exported/133200997/export-205075c3c0bea21e0bfdfea4dedb0de3-scanner_tower.scn
+res://Scenes/Towers/slow_tower.tscn::731ae7d2b9ba726a8d1033510c35f987::1765514712::res://.godot/exported/133200997/export-d11dca1e1ff539c041ac8e43b2c9d5b1-slow_tower.scn
+res://Scenes/Towers/Zap Tower.tscn::d1e330bb311e7aa3b5b7b00b217def09::1765514633::res://.godot/exported/133200997/export-f74a46fa9f3520df776b36ab65826ac0-Zap Tower.scn
+res://Scenes/debug_stuff.tscn::f13859dffe7401603a42a50436fe2b12::1765514828::res://.godot/exported/133200997/export-23c2242bd60800d344a1ce28080690c0-debug_stuff.scn
+res://Scripts/Enemies/Shaders/Hit_Effect.tres::8ef7bcdb41a3b41627059cef0027021c::1765486360::res://.godot/exported/133200997/export-00257b63877051a2b646ab6d6f079518-Hit_Effect.res
