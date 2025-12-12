@@ -1,0 +1,120 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1765517069
+export_presets.cfg::TextFile::-1::1765516697::0::1::::<><><>0<>0<><>::
+icon.svg::CompressedTexture2D::6685664525001875603::1765516697::1765516697::1::::<><><>0<>0<>a3d4b3bcca08bd75f1da8b09221e1823<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+::res://Assets/::1765516885
+UI.tres::Theme::1124445450664321494::1765516697::0::1::::<><><>0<>0<><>::uid://b2hsd100jy67e::::res://Assets/Font/digital-7.ttf
+::res://Assets/Drawn Assets/::1765516885
+Basic Tower-export.png::CompressedTexture2D::5102492693515202994::1765516697::1765516697::1::::<><><>0<>0<>ba609623767ce1b765732f11205eef36<>res://.godot/imported/Basic Tower-export.png-9081ac92e1baf6abac631debdadced16.ctex::
+Basic Tower.png::CompressedTexture2D::2042565254227890074::1765516697::1765516697::1::::<><><>0<>0<>99ef0aebd01603dfdbb822058687bfca<>res://.godot/imported/Basic Tower.png-5446ad836ad128f42ab724a45ce654d1.ctex::
+Bug-export.png::CompressedTexture2D::816390356769540655::1765516697::1765516697::1::::<><><>0<>0<>09d7b9098c920ff6f95628cdf7bc0935<>res://.godot/imported/Bug-export.png-4ef288d2c1aade8b0960f029f36a3e0d.ctex::
+Bug.png::CompressedTexture2D::8207546518880368837::1765516697::1765516697::1::::<><><>0<>0<>2d1c6c7ca8b103d4bb515d00aea67673<>res://.godot/imported/Bug.png-df1016763a2f84e30794d7ccd7cc7932.ctex::
+CPU.png::CompressedTexture2D::7951797566393778734::1765516697::1765516697::1::::<><><>0<>0<>804219bfda450d43a2dcddaaad3f4934<>res://.godot/imported/CPU.png-ace76bb79dc58373f1f83eb577f5abd0.ctex::
+Projectile.png::CompressedTexture2D::2356176091784399146::1765516697::1765516697::1::::<><><>0<>0<>efc97a6570e7b7dcee93361769e85f85<>res://.godot/imported/Projectile.png-c5aeb6b259736418bb6702ab3370c943.ctex::
+Tower Defence TileSet.png::CompressedTexture2D::9109326608600571882::1765516697::1765516697::1::::<><><>0<>0<>ace279c02eaf933a1138c8e2d0131be3<>res://.godot/imported/Tower Defence TileSet.png-3e0ec6da58ffa9befbf8a565cd6a9cfa.ctex::
+tower_area_stylebox.tres::StyleBoxFlat::9095695235038909658::1765516697::0::1::::<><><>0<>0<><>::
+Trojin-export.png::CompressedTexture2D::894528464594136822::1765516697::1765516697::1::::<><><>0<>0<>7d57e0d4cef4d9529f4410854857dbc9<>res://.godot/imported/Trojin-export.png-7cfab28d5f711e528c6679c24853d105.ctex::
+Trojin.png::CompressedTexture2D::3249856518746275056::1765516697::1765516697::1::::<><><>0<>0<>54cfd1704629de91840951a22ef41fd6<>res://.godot/imported/Trojin.png-8d755b319721ba31738981c7054e9a46.ctex::
+Virus-export.png::CompressedTexture2D::6286567541002265435::1765516697::1765516697::1::::<><><>0<>0<>b2f3dc9f8ed357f9cc54066c3a5d439e<>res://.godot/imported/Virus-export.png-617c2d79e8cb95eb2702e533159ac104.ctex::
+Virus.png::CompressedTexture2D::6395114637970945728::1765516697::1765516697::1::::<><><>0<>0<>6e016c22ac505e625a0f562419c8127e<>res://.godot/imported/Virus.png-a144337ad36d5be30c5b20cbb1f08329.ctex::
+Zap Tower-export.png::CompressedTexture2D::3782833369209845115::1765516697::1765516697::1::::<><><>0<>0<>c781487b9abbc7c722f688b6abfef649<>res://.godot/imported/Zap Tower-export.png-f47a0e9334475de562a9d772e5398da8.ctex::
+Zap Tower.png::CompressedTexture2D::943567377206493263::1765516697::1765516697::1::::<><><>0<>0<>1668d561691a15c14c1e2775c2bfc546<>res://.godot/imported/Zap Tower.png-e0ef0af94a91b4a9ac1516391069b3f7.ctex::
+::res://Assets/Font/::1765516697
+digital-7 (italic).ttf::FontFile::616811871525474990::1765516697::1765516697::1::::<><><>0<>0<>a46cbccfbf8b956532813c219244e1fb<>res://.godot/imported/digital-7 (italic).ttf-1368ee64acc481f5259b4d3e2e767e25.fontdata::
+digital-7 (mono italic).ttf::FontFile::6983018803617159047::1765516697::1765516697::1::::<><><>0<>0<>4a2f5657558f696ae79bf287a7349b62<>res://.godot/imported/digital-7 (mono italic).ttf-b82f31c7fa2c47c5abf0316bcc5498c0.fontdata::
+digital-7 (mono).ttf::FontFile::2545729817068448009::1765516697::1765516697::1::::<><><>0<>0<>7110b5c7b7e29dec78ad210cdde2b23e<>res://.godot/imported/digital-7 (mono).ttf-673527c9586902a92720e8ac18067617.fontdata::
+digital-7.ttf::FontFile::4297069774826011888::1765516697::1765516697::1::::<><><>0<>0<>5147bf51f7af3da1414dfc862a18d2c3<>res://.godot/imported/digital-7.ttf-e53a1823e9cf02645ee6b3bef1d9f33f.fontdata::
+readme.txt::TextFile::-1::1765516697::0::1::::<><><>0<>0<><>::
+::res://Assets/SFX/::1765516697
+::res://Resources/::1765516697
+::res://Resources/Enemies/::1765516937
+Bug.tres::Resource/Virus_Stats::3362319521391051532::1765516697::0::1::::<><><>0<>0<><>::uid://cqxdnbyd5ml1m::::res://Scripts/Resources/Virus_Stats.gd
+Trojin_Boss.tres::Resource/Virus_Stats::3117119566872822869::1765516697::0::1::::<><><>0<>0<><>::uid://cqxdnbyd5ml1m::::res://Scripts/Resources/Virus_Stats.gd
+Virus.tres::Resource/Virus_Stats::3857593783740416989::1765516697::0::1::::<><><>0<>0<><>::uid://cqxdnbyd5ml1m::::res://Scripts/Resources/Virus_Stats.gd
+::res://Resources/Paths/::1765516937
+lv2_path.tres::Curve2D::8582140652939607427::1765516697::0::1::::<><><>0<>0<><>::
+lvl_3_path.tres::Curve2D::8517607598920232324::1765516697::0::1::::<><><>0<>0<><>::
+::res://Resources/Towers/::1765516937
+Proj.tres::Resource/Tower_Stats::6657070753019425182::1765516697::0::1::::<><><>0<>0<><>::uid://cn4hyohfaubkd::::res://Scripts/Resources/Tower_Stats.gd
+snipe.tres::Resource/Tower_Stats::3460031949285404935::1765516697::0::1::::<><><>0<>0<><>::uid://cn4hyohfaubkd::::res://Scripts/Resources/Tower_Stats.gd
+zap.tres::Resource/Tower_Stats::7448785357968709550::1765516697::0::1::::<><><>0<>0<><>::uid://cn4hyohfaubkd::::res://Scripts/Resources/Tower_Stats.gd
+::res://Scenes/::1765516960
+debug_stuff.tscn::PackedScene::334470181997207010::1765516697::0::1::::<><><>0<>0<><>::uid://bftc6pfh5ohf0::::res://Scripts/debug_stuff.gd
+::res://Scenes/Enemies/::1765516960
+Bug.tscn::PackedScene::1457681647240949869::1765516697::0::1::::<><><>0<>0<><>::uid://cjgveqwrxbd5q::::res://Scripts/Shaders/Hit_Effect.gdshader<>uid://diqebx22ow2dk::::res://Scripts/Enemies/Enemy.gd<>uid://bn5y58o2kgtaq::::res://Resources/Enemies/Bug.tres<>uid://do62denc4wcnd::::res://Assets/Drawn Assets/Bug.png<>uid://d21vjp1o8gcgw::::res://Assets/Drawn Assets/Tower Defence TileSet.png<>uid://c5t2if0gegcqh::::res://Assets/SFX/enem_hit.wav
+Enem_Death.tscn::PackedScene::4942919077851102532::1765516697::0::1::::<><><>0<>0<><>::
+trojin_horse.tscn::PackedScene::4860956666734916493::1765516697::0::1::::<><><>0<>0<><>::uid://cjgveqwrxbd5q::::res://Scripts/Shaders/Hit_Effect.gdshader<>uid://diqebx22ow2dk::::res://Scripts/Enemies/Enemy.gd<>uid://bkn7repki5rir::::res://Resources/Enemies/Trojin_Boss.tres<>uid://d21vjp1o8gcgw::::res://Assets/Drawn Assets/Tower Defence TileSet.png<>uid://c5t2if0gegcqh::::res://Assets/SFX/enem_hit.wav
+virus.tscn::PackedScene::6812732933585925941::1765516697::0::1::::<><><>0<>0<><>::uid://diqebx22ow2dk::::res://Scripts/Enemies/Enemy.gd<>uid://cjgveqwrxbd5q::::res://Scripts/Shaders/Hit_Effect.gdshader<>uid://bu7wag7qlj1wr::::res://Resources/Enemies/Virus.tres<>uid://d21vjp1o8gcgw::::res://Assets/Drawn Assets/Tower Defence TileSet.png<>uid://c5t2if0gegcqh::::res://Assets/SFX/enem_hit.wav
+::res://Scenes/Managers/::1765516697
+::res://Scenes/Maps and UI/::1765516960
+Firstlvl_tilemap.tscn::PackedScene::6166019368220249959::1765516697::0::1::::<><><>0<>0<><>::uid://d21vjp1o8gcgw::::res://Assets/Drawn Assets/Tower Defence TileSet.png
+lvl_1.tscn::PackedScene::6381391420025622906::1765516697::0::1::::<><><>0<>0<><>::uid://dc31c1q347cf::::res://Scripts/Levels-UI/Levels.gd<>uid://u1d2le8te1px::::res://Scenes/Enemies/Bug.tscn<>uid://c4ceyl1flgcmv::::res://Scenes/Enemies/virus.tscn<>uid://cbiximq76w8v6::::res://Scenes/Enemies/trojin_horse.tscn<>uid://d21vjp1o8gcgw::::res://Assets/Drawn Assets/Tower Defence TileSet.png<>uid://bylox8p5bdg1v::::res://Scenes/Maps and UI/UI.tscn<>uid://bampfxtgf2u7b::::res://Scenes/Towers/cpu.tscn<>uid://cconfjh2ep605::::res://Scenes/Enemies/Enem_Death.tscn
+lvl_2.tscn::PackedScene::6658944922275860305::1765516697::0::1::::<><><>0<>0<><>::uid://cw6gt4rqpfwnq::::res://Scenes/Maps and UI/lvl_1.tscn<>uid://dujiuqya758tj::::res://Resources/Paths/lv2_path.tres
+lvl_3.tscn::PackedScene::1130295299391644141::1765516697::0::1::::<><><>0<>0<><>::uid://c14v35t3xx1ab::::res://Scenes/Maps and UI/lvl_2.tscn<>uid://dtl80ue0yokrk::::res://Resources/Paths/lvl_3_path.tres
+title_screen.tscn::PackedScene::5980838477191723804::1765516697::0::1::::<><><>0<>0<><>::uid://qaxpm307f12q::::res://Assets/UI.tres<>uid://d14k37c2il8jp::::res://Scripts/Shaders/title_screen_bg.gdshader<>uid://ctc6aevwyo84q::::res://Scripts/Levels-UI/title_screen.gd
+UI.tscn::PackedScene::4094553955266224713::1765516697::0::1::::<><><>0<>0<><>::uid://oo804fs4kngo::::res://Scripts/Levels-UI/ui.gd<>uid://cqmoc0kavr2g6::::res://Scenes/Panels/Norm_Tower.tscn<>uid://qaxpm307f12q::::res://Assets/UI.tres<>uid://bg2vevy3diekj::::res://Scenes/Panels/Zap_Panel.tscn<>uid://k6pird1aqces::::res://Scenes/Panels/slow_tower.tscn
+upgrade_shop.tscn::PackedScene::8637578105336612261::1765516697::0::1::::<><><>0<>0<><>::
+::res://Scenes/Panels/::1765516960
+Norm_Tower.tscn::PackedScene::5921490336690538287::1765516697::0::1::::<><><>0<>0<><>::uid://dmdqyphadnhrn::::res://Scripts/Panels/Norm_Tower_panel_node.gd<>uid://cn2dffbl3qbcy::::res://Scripts/Panels/Norm_Tower_panel.gd<>uid://qaxpm307f12q::::res://Assets/UI.tres<>uid://deug8vwqga8to::::res://Scenes/Towers/Proj Tower.tscn<>uid://4do0srw1c8g1::::res://Assets/Drawn Assets/Basic Tower.png
+scaner_pannel.tscn::PackedScene::5482074565754033242::1765516697::0::1::::<><><>0<>0<><>::uid://cqmoc0kavr2g6::::res://Scenes/Panels/Norm_Tower.tscn<>uid://ki37pktdvxby::::res://Scenes/Towers/scanner_tower.tscn
+slow_tower.tscn::PackedScene::766810086712231074::1765516697::0::1::::<><><>0<>0<><>::uid://cqmoc0kavr2g6::::res://Scenes/Panels/Norm_Tower.tscn<>uid://bess207sn47b8::::res://Scenes/Towers/slow_tower.tscn
+Zap_Panel.tscn::PackedScene::2864575286246803933::1765516697::0::1::::<><><>0<>0<><>::uid://dmdqyphadnhrn::::res://Scripts/Panels/Norm_Tower_panel_node.gd<>uid://cn2dffbl3qbcy::::res://Scripts/Panels/Norm_Tower_panel.gd<>uid://qaxpm307f12q::::res://Assets/UI.tres<>uid://h3gy6igsgysx::::res://Scenes/Towers/Zap Tower.tscn<>uid://npcof4x43w2r::::res://Assets/Drawn Assets/Zap Tower.png
+::res://Scenes/Towers/::1765516960
+cpu.tscn::PackedScene::2412114138271556665::1765516697::0::1::::<><><>0<>0<><>::uid://1uifaq78kn8w::::res://Scripts/Managers/cpu.gd<>uid://dlj57doy0lx4q::::res://Assets/Drawn Assets/CPU.png
+Proj Tower.tscn::PackedScene::7481729351579162360::1765516697::0::1::::<><><>0<>0<><>::uid://vdpqhx68jd4d::::res://Scripts/Tanks/Tower.gd<>uid://dnv8q0jdyqo07::::res://Scenes/Towers/Projectiles/projectile.tscn<>uid://c13y8n8yyvexy::::res://Resources/Towers/Proj.tres<>uid://d21vjp1o8gcgw::::res://Assets/Drawn Assets/Tower Defence TileSet.png<>uid://d2ua1h85dx643::::res://Assets/Drawn Assets/tower_area_stylebox.tres<>uid://qaxpm307f12q::::res://Assets/UI.tres
+scanner_tower.tscn::PackedScene::720161483781650126::1765516697::0::1::::<><><>0<>0<><>::uid://dn78h1fnoqel1::::res://Scripts/Towers/scanner_tower.gd<>uid://d2ua1h85dx643::::res://Assets/Drawn Assets/tower_area_stylebox.tres<>uid://d21vjp1o8gcgw::::res://Assets/Drawn Assets/Tower Defence TileSet.png<>uid://qaxpm307f12q::::res://Assets/UI.tres
+slow_tower.tscn::PackedScene::2705477343477416891::1765516697::0::1::::<><><>0<>0<><>::uid://deug8vwqga8to::::res://Scenes/Towers/Proj Tower.tscn<>uid://dhfo1qplx5mce::::res://Scripts/Tanks/FastTower.gd<>uid://bpkchrd574tgh::::res://Resources/Towers/snipe.tres
+Zap Tower.tscn::PackedScene::549533284469437291::1765516697::0::1::::<><><>0<>0<><>::uid://dhfo1qplx5mce::::res://Scripts/Tanks/FastTower.gd<>uid://deein28u5i00y::::res://Resources/Towers/zap.tres<>uid://d21vjp1o8gcgw::::res://Assets/Drawn Assets/Tower Defence TileSet.png<>uid://qaxpm307f12q::::res://Assets/UI.tres
+::res://Scenes/Towers/Projectiles/::1765516960
+double_proj.tscn::PackedScene::3177162517317615891::1765516697::0::1::::<><><>0<>0<><>::uid://cox3qdclmdtk3::::res://Scripts/Tanks/double_proj.gd<>uid://mpkicwkkrbl4::::res://Assets/kenney_tower-defense-top-down/PNG/Default size/towerDefense_tile252.png
+projectile.tscn::PackedScene::8117102511828768714::1765516697::0::1::::<><><>0<>0<><>::uid://b3iee6sj0pveh::::res://Scripts/Towers/projectile.gd<>uid://8tl41v6brtqg::::res://Assets/Drawn Assets/Projectile.png
+::res://Scripts/::1765516974
+debug_stuff.gd::GDScript::2776765668739954255::1765516697::0::1::::<>Control<><>0<>0<><>::
+debug_stuff.gdc::GDScript::1940637168262375963::1765516697::0::1::::<>RefCounted<><>0<>0<><>::
+::res://Scripts/Enemies/::1765516973
+Enemy.gd::GDScript::7754048749006623116::1765516697::0::1::::Enemy<>PathFollow2D<><>0<>0<><>::
+Enemy.gdc::GDScript::7685094042593111253::1765516697::0::1::::<>RefCounted<><>0<>0<><>::
+trojin_horse.gd::GDScript::3203308412442717995::1765516697::0::1::::Boss<>Enemy<><>0<>0<><>::
+Virus.gd::GDScript::7660336013498500002::1765516697::0::1::::<>Enemy<><>0<>0<><>::
+::res://Scripts/Enemies/Shaders/::1765516697
+Hit_Effect.gdshader::Shader::5418210301839048752::1765516697::0::1::::<><><>0<>0<><>::
+Hit_Effect.tres::VisualShader::3186136130037372728::1765516697::0::1::::<><><>0<>0<><>::
+::res://Scripts/Levels-UI/::1765516973
+double_tower_panel_node.gd::GDScript::3028499154323581401::1765516697::0::1::::<>Tank_Panel_Node<><>0<>0<><>::
+Levels.gd::GDScript::216441938838381169::1765516697::0::1::::Level<>Node2D<><>0<>0<><>::
+Levels.gdc::GDScript::5870145191113399589::1765516697::0::1::::<>RefCounted<><>0<>0<><>::
+title_screen.gd::GDScript::6112440622359231454::1765516697::0::1::::<>Control<><>0<>0<><>::
+title_screen.gdc::GDScript::9120871992103225473::1765516697::0::1::::<>RefCounted<><>0<>0<><>::
+ui.gd::GDScript::1013594936856381870::1765516697::0::1::::<>CanvasLayer<><>0<>0<><>::
+ui.gdc::GDScript::7271489071954115709::1765516697::0::1::::<>RefCounted<><>0<>0<><>::
+::res://Scripts/Managers/::1765516974
+cpu.gd::GDScript::1866692180797006220::1765516697::0::1::::<>Button<><>0<>0<><>::
+cpu.gdc::GDScript::736103505233806754::1765516697::0::1::::<>RefCounted<><>0<>0<><>::
+Game_Manager.gd::GDScript::8156717986625108769::1765516697::0::1::::<>Node<><>0<>0<><>::
+Game_Manager.gdc::GDScript::4951612134813704097::1765516697::0::1::::<>RefCounted<><>0<>0<><>::
+sfx_manager.gd::GDScript::3057600886402913823::1765516697::0::1::::<>Node<><>0<>0<><>::
+sfx_manager.gdc::GDScript::5075544420200743511::1765516697::0::1::::<>RefCounted<><>0<>0<><>::
+::res://Scripts/Panels/::1765516974
+Norm_Tower_panel.gd::GDScript::5741225878687453248::1765516697::0::1::::TankPanel<>Panel<><>0<>0<><>::
+Norm_Tower_panel.gdc::GDScript::1108656605141313489::1765516697::0::1::::<>RefCounted<><>0<>0<><>::
+Norm_Tower_panel_node.gd::GDScript::8008736437604263747::1765516697::0::1::::Tank_Panel_Node<>Control<><>0<>0<><>::
+Norm_Tower_panel_node.gdc::GDScript::3845582205112965127::1765516697::0::1::::<>RefCounted<><>0<>0<><>::
+::res://Scripts/Resources/::1765516974
+Tower_Stats.gd::GDScript::5745631913919936987::1765516697::0::1::::Tower_Stats<>Resource<><>0<>0<><>::
+Tower_Stats.gdc::GDScript::104271511664379892::1765516697::0::1::::<>RefCounted<><>0<>0<><>::
+Virus_Stats.gd::GDScript::5943549010012695884::1765516697::0::1::::Virus_Stats<>Resource<><>0<>0<><>::
+Virus_Stats.gdc::GDScript::8546619794231194195::1765516697::0::1::::<>RefCounted<><>0<>0<><>::
+::res://Scripts/Shaders/::1765516697
+Hit_Effect.gdshader::Shader::5324012214706199587::1765516697::0::1::::<><><>0<>0<><>::
+title_screen_bg.gdshader::Shader::9044697797767611773::1765516697::0::1::::<><><>0<>0<><>::
+::res://Scripts/Tanks/::1765516697
+double_proj.gd::GDScript::3752032243261026335::1765516697::0::1::::<>Projectile<><>0<>0<><>::
+FastTower.gd::GDScript::7661803177933473528::1765516697::0::1::::<>Tower<><>0<>0<><>::
+projectile.gd::GDScript::4368474995210446603::1765516697::0::1::::Projectile<>CharacterBody2D<><>0<>0<><>::
+Tower.gd::GDScript::1481098581901742689::1765516697::0::1::::Tower<>Area2D<><>0<>0<><>::
+::res://Scripts/Towers/::1765516704
+double_proj.gdc::GDScript::870651281025287987::1765516697::0::1::::<>RefCounted<><>0<>0<><>::
+No Bullet.gdc::GDScript::7866950229225749961::1765516697::0::1::::<>RefCounted<><>0<>0<><>::
+projectile.gdc::GDScript::794729494461384823::1765516697::0::1::::<>RefCounted<><>0<>0<><>::
+scanner_tower.gdc::GDScript::1910976469024698702::1765516697::0::1::::<>RefCounted<><>0<>0<><>::
+Tower.gdc::GDScript::7430178429997895011::1765516697::0::1::::<>RefCounted<><>0<>0<><>::

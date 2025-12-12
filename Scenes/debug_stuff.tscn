@@ -1,0 +1,46 @@
+[gd_scene load_steps=2 format=3 uid="uid://e1aw7ln7dsmk"]
+
+[ext_resource type="Script" uid="uid://bftc6pfh5ohf0" path="res://Scripts/debug_stuff.gd" id="1_v7gid"]
+
+[node name="Debug Stuff" type="Control" node_paths=PackedStringArray("Stage")]
+z_index = 1
+layout_mode = 3
+anchors_preset = 0
+offset_right = 640.0
+offset_bottom = 320.0
+script = ExtResource("1_v7gid")
+Stage = NodePath("")
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 552.0
+offset_top = 24.0
+offset_right = 639.0
+offset_bottom = 46.0
+theme_override_font_sizes/font_size = 10
+text = "Erase All Towers"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 552.0
+offset_right = 640.0
+offset_bottom = 22.0
+theme_override_font_sizes/font_size = 10
+text = "MONEEEEYYYY"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button3" type="Button" parent="."]
+layout_mode = 0
+offset_left = 552.0
+offset_top = 48.0
+offset_right = 640.0
+offset_bottom = 70.0
+theme_override_font_sizes/font_size = 10
+text = "Spawn enem"
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
