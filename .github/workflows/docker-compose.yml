@@ -1,22 +1,22 @@
-version: '3.8'
+version: '3.8' # Specifies the Docker Compose file format version
 
 services:
-  app:
-    image: tower-defence-game
+  app: # Defines the 'app' service
+    image: tower-defence-game # Specifies the Docker image to use for the service
     ports:
-      - "8000:8000"
+      - "8000:8000" # Maps port 8000 on the host to port 8000 in the container
     volumes:
-      - ./data:/usr/src/app/data
+      - ./data:/usr/src/app/data # Mounts the local 'data' directory to '/usr/src/app/data' in the container
     deploy:
       resources:
         limits:
-          cpus: "0.5"
-          memory: "512M"
-    command: ["npm", "start"]
+          cpus: "0.5" # Limits the service to use a maximum of 0.5 CPU cores
+          memory: "512M" # Limits the service to use a maximum of 512 MB of memory
+    command: ["npm", "start"] # Command to run when the container starts
 
 volumes:
-  data:
+  data: # Defines the 'data' volume
     driver_opts:
-      type: none
-      o: bind
-      device: ${PWD}/data
+      type: none # Specifies that the volume is a bind mount
+      o: bind # Indicates the bind mount option
+      device: ${PWD}/data # Sets the path to the local directory to bind to the volume
