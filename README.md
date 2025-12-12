@@ -21,3 +21,5 @@ This is a school project for the class **Programming Language Principles**. The 
    ```bash
    git clone https://github.com/your-username/Tower-Defence-Game.git
    cd Tower-Defence-Game
+   bash updateImage.bash
+   ```
