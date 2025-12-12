@@ -3,6 +3,7 @@
 
 services:
   app:
+<<<<<<< Updated upstream
 	build:
 	  context: .
 	  dockerfile: Dockerfile.app
@@ -15,3 +16,17 @@ services:
 
 volumes:
   COSC450DB:
+=======
+    build:
+      context: .
+      dockerfile: Dockerfile.app
+    ports:
+      - "8000:8000"
+    volumes:
+      # CHANGE THIS LINE:
+      # Old: - COSC450DB:/usr/src/app/database
+      - COSC450DB:/usr/src/app/data # Align with Dockerfile and Server path
+
+volumes:
+  COSC450DB:
+>>>>>>> Stashed changes

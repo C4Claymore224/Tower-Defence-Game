@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://bess207sn47b8"]
 
 [ext_resource type="PackedScene" uid="uid://deug8vwqga8to" path="res://Scenes/Towers/Proj Tower.tscn" id="1_s4ntf"]
-[ext_resource type="Script" uid="uid://dhfo1qplx5mce" path="res://Scripts/Towers/No Bullet.gd" id="2_sernl"]
-[ext_resource type="Resource" uid="uid://c3ir46xjwkw5s" path="res://Resources/Towers/Sniper_Tower.tres" id="3_agtxh"]
+[ext_resource type="Script" uid="uid://dhfo1qplx5mce" path="res://Scripts/Tanks/FastTower.gd" id="2_sernl"]
+[ext_resource type="Resource" uid="uid://bpkchrd574tgh" path="res://Resources/Towers/snipe.tres" id="3_agtxh"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_s4ntf"]
 radius = 1000.0
